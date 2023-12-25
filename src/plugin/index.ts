@@ -138,7 +138,7 @@ function cssPropertyToJSConst(propertyString: string): string {
  */
 function generatesCSSKeyString(variable: Variable): string {
 	return (
-		'--' +
+		'--' + 'leaf-'
 		variable.name
 			.replace(/\//g, '-')
 			.replace(/([a-z0-9])([A-Z])/g, '$1-$2')
